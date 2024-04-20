@@ -7,6 +7,7 @@
 body {
   font-family: "Montserrat", serif;
   color: #3a502f;
+  background-image: url(./assets/bg-img.webp);
 }
 h1,
 h2,
@@ -22,9 +23,9 @@ a {
 }
 .main {
   /* background-color: #000; */
-  background-image: url(./assets/bg-img.webp);
   background-repeat: repeat;
   padding: 90px;
+  width: 1408px;
 }
 .main-container {
   background-color: #fff5eb;

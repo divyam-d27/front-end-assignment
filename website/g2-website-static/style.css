@@ -125,6 +125,16 @@ a {
   border-radius: 18px;
   border: 1px solid #5a39a2;
 }
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.menu-btn > svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
 /* HERO section */
 .bg-img-container {
@@ -672,4 +682,49 @@ footer {
   border-top: solid rgba(254, 254, 254, 0.5) 1px;
   color: rgba(254, 254, 254, 0.5);
   text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .nav-link-item:not(:first-child) {
+    display: none;
+  }
+  .software-category-container,
+  .softwares-container,
+  .software-box-container {
+    width: 50%;
+  }
+  .navbar,
+  .hero-content-outer-container,
+  .work-section-container,
+  .ques-section-container,
+  .review-section-container,
+  .research-section-container,
+  .footer-links-container {
+    width: 100%;
+  }
+  .ques-flex-container {
+    flex-direction: column-reverse;
+  }
+  .ques-img-container,
+  .ques-content-container {
+    width: 100%;
+  }
+  .ques-content-container {
+    text-align: center;
+  }
+  .review-flex-container {
+    flex-direction: column;
+  }
+  .review-content-container {
+    width: 100%;
+  }
+  .research-parent-flex-container {
+    flex-wrap: wrap;
+  }
+  .research-child-flex-container {
+    width: 50%;
+    margin-right: 0;
+    max-width: 50%;
+  }
 }
