@@ -20,6 +20,7 @@ ul {
 .main {
   width: 100%;
   height: 100vh;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +30,8 @@ ul {
 }
 .red-txt {
   color: #e62429;
-  font-weight: 600;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 .author-name {
   position: absolute;
@@ -38,16 +40,18 @@ ul {
 }
 .head > h1 {
   font-size: 72px;
-  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 50px;
 }
-.head > p {
+.author-name > p {
   font-size: 12px;
+  letter-spacing: 2px;
   position: relative;
 }
 .red-bar {
   position: absolute;
-  right: -19px;
-  bottom: -2px;
+  right: 8%;
+  bottom: -10%;
   border: none;
   height: 1px;
   width: 70px;
@@ -59,8 +63,79 @@ ul {
   justify-content: center;
 }
 .separator {
-  height: 100px;
+  height: 50px;
   width: 2px;
   background-color: #e62429;
-  margin: 0 100px;
+}
+.links-container ul {
+  width: 50%;
+}
+.link-heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.links-container > ul > li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+.pos-rel {
+  position: relative;
+}
+.red-head-bar {
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  border: none;
+  height: 1px;
+  width: 35px;
+  background-color: #e62429;
+}
+.links-container > ul > li:hover {
+  color: #e62429;
+}
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .main {
+    height: auto;
+  }
+  .head > h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .author-name {
+    bottom: -20%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .author-name > p {
+    font-size: 10px;
+  }
+  .red-bar {
+    right: 10%;
+    width: 55px;
+  }
+  .links-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .separator {
+    height: 1px;
+    width: 50px;
+  }
+  .link-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .red-head-bar {
+    width: 30px;
+  }
+  .links-container > ul > li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
 }
